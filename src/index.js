@@ -8,6 +8,7 @@ import discord from 'discord.js'
 import { botToken } from './env'
 import { log, logError } from './functions/log'
 import { pullMessages } from './functions/pullMessages'
+import { writePDF } from './functions/writePDF'
 
 const main = async () => {
   // Initialize the client.
@@ -27,7 +28,8 @@ const main = async () => {
 
   const messages = await pullMessages(client)
   if (!!messages) {
-    console.log(messages)
+    writePDF(messages)
+    log('Main', `Length: ${messages.length}`)
   }
 
 }
