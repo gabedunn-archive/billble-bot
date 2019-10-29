@@ -6,7 +6,7 @@
 import moment from 'moment'
 
 import { logError } from './log'
-import { guildID, wordsChannelID } from './env'
+import { guildID, wordsChannelID } from '../env'
 
 export const pullMessages = async client => {
   const guilds = client.guilds

@@ -6,8 +6,8 @@
 import discord from 'discord.js'
 
 import { botToken } from './env'
-import { log, logError } from './log'
-import { pullMessages } from './pullMessages'
+import { log, logError } from './functions/log'
+import { pullMessages } from './functions/pullMessages'
 
 const main = async () => {
   // Initialize the client.
