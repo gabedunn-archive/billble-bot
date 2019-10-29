@@ -25,7 +25,10 @@ const main = async () => {
     await logError('Init', 'Bot failed to log in', err)
   }
 
-  await pullMessages(client)
+  const messages = await pullMessages(client)
+  if (!!messages) {
+    console.log(messages)
+  }
 
 }
 

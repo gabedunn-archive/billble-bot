@@ -28,10 +28,10 @@ export const pullMessages = async client => {
   // Return the messages, with formatted date and quotes ("") removed.
   // TODO: pull all messages instead of 100
   return (await wordsChannel.fetchMessages({
-    limit: 100
+    limit: 10
   })).map(message => {
     return {
-      timestamp: moment(message.createdTimestamp).format('YYYY-MM-DD'),
+      date: moment(message.createdTimestamp).format('YYYY-MM-DD'),
       content: message.content.replace(/^((> ?)?"?)|("$)/g, '')
     }
   })
