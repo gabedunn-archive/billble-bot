@@ -5,10 +5,11 @@
 
 import discord from 'discord.js'
 
-import { botToken } from './env'
+import { botToken, prefix } from './env'
 import { log, logError } from './functions/log'
 import { pullMessages } from './functions/pullMessages'
 import { writePDF } from './functions/writePDF'
+import { sendBillble } from './functions/sendBillble'
 
 const main = async () => {
   // Initialize the client.
@@ -26,12 +27,11 @@ const main = async () => {
     await logError('Init', 'Bot failed to log in', err)
   }
 
-  const messages = await pullMessages(client)
-  if (!!messages) {
-    writePDF(messages)
-    log('Main', `Length: ${messages.length}`)
-  }
-
+  client.on('message', async message => {
+    if (message.channel.type !== 'dm' && message.content === `${prefix}billble` && !message.author.bot) {
+      return sendBillble(message)
+    }
+  })
 }
 
 // Run the main function.

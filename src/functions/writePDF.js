@@ -1,10 +1,10 @@
 import PdfPrinter from 'pdfmake'
 
-import { createWriteStream } from 'fs'
+import { createWriteStream, unlinkSync } from 'fs'
 import { join } from 'path'
 
-export const writePDF = messages => {
-  const outPath = join(__dirname, '..', '..', 'out', 'billble.pdf')
+export const writePDF = async messages => {
+  const outPath = join(__dirname, '..', '..', 'out', 'The_Billble.pdf')
 
   const fonts = {
     Roboto: {
@@ -22,7 +22,6 @@ export const writePDF = messages => {
   }
 
   const docDefinition = {
-    // content: messages.map(m => `${m.date}\t"${m.content}"`),
     content: [
       {
         text: 'The Billble',
@@ -69,12 +68,13 @@ export const writePDF = messages => {
     pageMargins: [60, 60, 60, 60]
   }
 
-  const options = {
-    //
-  }
+  // Remove the previous file if it exists.
+  try {
+    await unlinkSync(outPath)
+  } catch (e) {}
 
   const printer = new PdfPrinter(fonts)
-  const pdfDoc = printer.createPdfKitDocument(docDefinition, options)
+  const pdfDoc = printer.createPdfKitDocument(docDefinition)
   pdfDoc.pipe(createWriteStream(outPath))
-  pdfDoc.end()
+  return await pdfDoc.end()
 }
