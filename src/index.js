@@ -4,13 +4,10 @@
  */
 
 import discord from 'discord.js'
-import { config } from 'dotenv'
 
+import { botToken } from './env'
 import { log, logError } from './log'
-import { showGuilds } from './pullMessages'
-import { saveTestPDF } from './generatePDF'
-
-config()
+import { pullMessages } from './pullMessages'
 
 const main = async () => {
   // Initialize the client.
@@ -23,14 +20,14 @@ const main = async () => {
 
   // Log the bot in.
   try {
-    await client.login(process.env.BOT_TOKEN)
+    await client.login(botToken)
   } catch (err) {
     await logError('Init', 'Bot failed to log in', err)
   }
 
-  // await showGuilds(client)
-  await saveTestPDF()
+  await pullMessages(client)
+
 }
 
 // Run the main function.
-main().then(() => log('Main', 'Bot Initialized!'))
+main().then()
