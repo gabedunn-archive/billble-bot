@@ -50,21 +50,26 @@ const fetchAllMessages = async client => {
   }
 
   // Return a flattened version of the message array.
-  return messages.flat()
+  return [...messages.flat(), ...[...preChannelQuotes].reverse().map(q => {
+    return {
+      author: {
+        bot: false
+      },
+      ...q
+    }
+  })]
 }
 
 // Function to pull messages from the channel
 export const pullMessages = async client => {
-  return [
-    ...preChannelQuotes,
-    ...(await fetchAllMessages(client))
-      .reverse()
-      .map(message => {
-          return {
-            date: moment(message.createdTimestamp).format('YYYY-MM-DD'),
-            content: message.content.replace(/^((>* ?)?"?)|("$)/g, '')
-          }
+  return (await fetchAllMessages(client))
+    .filter(m => m && m.author && !m.author.bot)
+    .reverse()
+    .map(message => {
+        return {
+          date: moment(message.createdTimestamp).format('YYYY-MM-DD'),
+          content: message.content.replace(/^((>* ?)?"?)|("$)/g, '')
         }
-      )
-  ]
+      }
+    )
 }
