@@ -7,8 +7,6 @@ import discord from 'discord.js'
 
 import { botToken, prefix } from './env'
 import { log, logError } from './functions/log'
-import { pullMessages } from './functions/pullMessages'
-import { writePDF } from './functions/writePDF'
 import { sendBillble } from './functions/sendBillble'
 
 const main = async () => {

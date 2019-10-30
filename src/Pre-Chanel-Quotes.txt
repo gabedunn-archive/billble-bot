@@ -1,0 +1,130 @@
+
+-0/14885388/65-	"An empty array is filled with zeros. This array represents your grades"
+
+-0/14885388/65-	"java is like your mom, it takes care of you. C will let you drive your car right off the track"
+
+-0/14885388/65-	"Java won't let you do what you want, C on the other hand let's you do whatever which is great cause if I want to do something dumb I don't want to let a language stop me"
+
+-2019/9/12-	"I can't do math in public."
+
+-2019/9/12-	"This toast isn't magnetic."
+
+-2019/9/12-	"Has anyone actually verified that I work for the university?"
+
+-2019/9/12-	"mistake? NO! BECAUSE I BELIEVE IN MYSELF."
+
+-2019/9/16-	"You have a wallet, I have a wallet. What's the difference? Mine has a lot of money in it. Remember, tuition's due in two weeks."
+
+-2019/9/16-	"What takes more time: drawing a diagram or retaking the course again next year?"
+
+-2019/9/16-	"They do things there with cheese curds that you'd only imagine"
+
+-2019/9/16-	"Go to Quebec and spend a thousand dollars on fried chicken"
+
+-2019/9/16-	"There's a variable out here and it's kind of... chilly, and weird, and spooky."
+
+-2019/9/16-	"I shouldn't trust my own thoughts, and you should consider not trusting yours"
+
+-2019/9/16-	"This demo will take up the last 5 minutes, and thats my passive agressive way of telling you there is 5 minutes left in class"
+
+-2019/9/17-	"We dont care how the toaster works, we just care that the toaster works"
+
+-2019/9/17-	"It would be great if everybody just left; that's fine, I'd just leave too!"
+
+-2019/9/17-	"Is anybody here today?"
+
+-2019/9/17-	"No"
+
+-2019/9/17-	"I gotta hydrate first, this is going to be a tough one"
+
+-2019/9/17-	"I'd bet, if some of you reach into your pockets you'd pull out a wallet"
+
+-2019/9/17-	"If you pull out your wallet, should I expect you to pull out my credit card?"
+
+-2019/9/17-	"Now I realize you all just have this weird applause fetish"
+
+-2019/9/17-	"If you reach into your wallet and pull out my credit card that would be impressive"
+
+-2019/9/17-	"Nobody is reacting, and that means everyone with a monday or tuesday lab has dropped the course"
+
+-2019/9/17-	"We have to give them a name... I guess"
+
+-2019/9/17-	"Really its the University's fault for having seats there"
+
+-2019/9/17-	"The way you become comfertable is by being uncomertable and just doing it"
+
+-2019/9/17-	"Anyone else want to leave in protest of this being an operator?"
+
+-2019/9/17-	"You have no idea how much of the stationary budget goes into red pens"
+
+-2019/9/17-	"Ive prepared the next half hour of the lecture hoping that you would ask that question"
+
+-2019/9/17-	"Instead of notes you can also bring one standard letter sized sheet of paper. I will provide the dimensions closer to the time"
+
+-2019/9/17-	"I do not understand the linear passage of time"
+
+-2019/9/17-	"If I go into the horrifying nothingness and find nothing, then I return a compiler error"
+
+-2019/9/17-	"The chalk is leaving in protest"
+
+-2019/9/18-	"the computer and I have been together for years, so it's sorta like a old married couple"
+
+-2019/9/18-	"the course is bill bird."
+
+-2019/9/18-	"try me, if you don't believe me, try me, and I'll see you next year"
+
+-2019/9/18-	"HOW IS THE BATTERY LOW? oh I didn't have it plugged in"
+
+-2019/9/18-	"oh, I didn't plug it in, old married couple problems, you know"
+
+-2019/9/18-	"I mean pointers are great, I love pointers, some of my best friend are pointers"
+
+-2019/9/19-	"IF ONLY THERE WAS SOMETHING I COULD WRITE IN THE C LANGUAGE THAT COULD TEST SOMETHING FOR ME!"
+
+-2019/9/19-	"Maybe the tech people are scared of me, and that's why they showed up so quickly"
+
+-2019/9/19-	"The diagram does the work for us"
+
+-2019/9/19-	"Oh shit, I don't know my name"
+
+-2019/9/19-	"As long as you get toast, how you create the toast doesn't matter as long as it does the job it's supposed to"
+
+-2019/9/19-	"I'll go to my office and wait for the call from HR. I'm sure they've got me on speed dial at this point"
+
+-2019/9/19-	"Once you've designed a complete toaster, I assume it's going to follow the rules"
+
+-2019/9/19-	"YOU HAVE PAID FOR 3 MORE MINUTES OF MY VALUABLE TIME, SO YOU'RE GONNA DAMN LISTEN"
+
+-2019/9/19-	"I'M STILL NOT DONE TALKING"
+
+-2019/9/19-	"We had some fun times with the projector. We laughed, we cried, we mostly cried"
+
+-2019/9/19-	"The chalk doesn't believe me either"
+
+-2019/9/19-	"It's not that bad! Some of you won't be there by then!"
+
+-2019/9/19-	"Am I gonna moan about being back at my office at 6:00pm? Damn right I am! I earned that right!"
+
+-2019/9/19-	"Well yes it's true that I go home after six and listen to a spotify playlist of applause"
+
+-2019/9/19-	"If someone brings a sheet of carbon paper to an exam I will like them so much that I will fail them so I can see them next year"
+
+-2019/9/19-	"Something seems dissonant about 7"
+
+-2019/9/19-	"Is someone going to close the door? No, I guess the people in the lobby are going to learn programming I guess"
+
+-2019/9/19-	"Assignment 1 went well for everybody, assignment 2 will not go so well."
+
+-2019/9/19-	"The computer screen is just motivational text"
+
+-2019/9/19-	"Would you like me to pull this from linear algebra instead?"
+
+-2019/9/19-	"Assignment 5 wont be that bad, some of you wont be here then"
+
+-2019/9/19-	"Anyone want to keep moaning because math is hard?"
+
+-2019/9/19-	"How do I print out a stair?"
+
+-2019/9/19-	"There is this wonderful recording of applause from Europe"
+
+-2019/9/19-	"If you remember correctly one of the pre requisites for this class was fourth grade"
