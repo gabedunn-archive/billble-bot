@@ -8,6 +8,8 @@ import moment from 'moment'
 import { logError } from './log'
 import { guildID, wordsChannelID } from '../env'
 
+import preChannelQuotes from '../preChannelQuotes'
+
 const fetchAllMessages = async client => {
   // Fetch the guild and make sure it exists.
   const guilds = client.guilds
@@ -53,12 +55,16 @@ const fetchAllMessages = async client => {
 
 // Function to pull messages from the channel
 export const pullMessages = async client => {
-  return (await fetchAllMessages(client))
-    .reverse()
-    .map(message => {
-      return {
-        date: moment(message.createdTimestamp).format('YYYY-MM-DD'),
-        content: message.content.replace(/^((>* ?)?"?)|("$)/g, '')
-      }
-    })
+  return [
+    ...preChannelQuotes,
+    ...(await fetchAllMessages(client))
+      .reverse()
+      .map(message => {
+          return {
+            date: moment(message.createdTimestamp).format('YYYY-MM-DD'),
+            content: message.content.replace(/^((>* ?)?"?)|("$)/g, '')
+          }
+        }
+      )
+  ]
 }
