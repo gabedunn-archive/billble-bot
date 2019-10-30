@@ -49,12 +49,15 @@ const fetchAllMessages = async client => {
     }
   }
 
-  // Return a flattened version of the message array.
+  // Return a flattened version of the message array concatenated with the pre-channel quotes,
+  // which have been reversed, and have the message.author.bot property set to false.
   return [...messages.flat(), ...[...preChannelQuotes].reverse().map(q => {
     return {
+      // Add an author.bot property.
       author: {
         bot: false
       },
+      // Add the rest of the quote.
       ...q
     }
   })]
@@ -62,12 +65,16 @@ const fetchAllMessages = async client => {
 
 // Function to pull messages from the channel
 export const pullMessages = async client => {
+  // Return an array with all the message that don't have a bot as the author,
+  // reversed and mapped into { date, content } format.
   return (await fetchAllMessages(client))
     .filter(m => m && m.author && !m.author.bot)
     .reverse()
     .map(message => {
         return {
+          // Use moment to format the date uniformly.
           date: moment(message.createdTimestamp).format('YYYY-MM-DD'),
+          // Remove > ", >", >>> ", ", and etc. from the start of lines, and " from the end.
           content: message.content.replace(/^((>* ?)?"?)|("$)/g, '')
         }
       }
