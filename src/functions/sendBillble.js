@@ -22,7 +22,7 @@ export const sendBillble = async message => {
         attachment,
       }]
     })
-    }, 2ad00)
+    }, 200)
   } else {
     return message.channel.send({
       embed: {
