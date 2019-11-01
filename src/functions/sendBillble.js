@@ -2,6 +2,7 @@ import { join } from 'path'
 import { pullMessages } from './pullMessages'
 import { writePDF } from './writePDF'
 import { log } from './log'
+import { sendfileWaitTime } from '../env'
 
 export const sendBillble = async message => {
   await message.channel.send({
@@ -22,7 +23,7 @@ export const sendBillble = async message => {
         attachment,
       }]
     })
-    }, 200)
+    }, sendfileWaitTime)
   } else {
     return message.channel.send({
       embed: {

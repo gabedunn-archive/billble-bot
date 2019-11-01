@@ -6,3 +6,4 @@ export const guildID = process.env.GUILD_ID || undefined
 export const wordsChannelID = process.env.WORDS_CHANNEL_ID || undefined
 export const prefix = process.env.PREFIX || '.'
 export const dateFormat = process.env.DATE_FORMAT || 'YYYY-MM-DD'
+export const sendfileWaitTime = parseInt(process.env.SENDFILE_WAIT_TIME, 10) | 200
