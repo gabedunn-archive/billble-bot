@@ -36,7 +36,7 @@ export const writePDF = async messages => {
         return {
           columns: [
             {
-              width: '20%',
+              width: '22%',
               text: m.date
             },
             {
