@@ -6,7 +6,7 @@
 import moment from 'moment'
 
 import { logError } from './log'
-import { guildID, wordsChannelID } from '../env'
+import { dateFormat, guildID, wordsChannelID } from '../env'
 
 import preChannelQuotes from '../preChannelQuotes'
 
@@ -73,7 +73,7 @@ export const pullMessages = async client => {
     .map(message => {
         return {
           // Use moment to format the date uniformly.
-          date: moment(message.createdTimestamp).format('YYYY-MM-DD'),
+          date: moment(message.createdTimestamp).format(dateFormat),
           // Remove > ", >", >>> ", ", and etc. from the start of lines, and " from the end.
           content: message.content.replace(/^((>* ?)?"?)|("$)/g, '')
         }
