@@ -71,11 +71,17 @@ export const pullMessages = async client => {
     .filter(m => m && m.author && !m.author.bot)
     .reverse()
     .map(message => {
+        const dateString = /^> -\d\d\d\d\/\d\d\/\d\d- /.test(message.content)
+          ? message.content.substr(3, 10).replace(/\//g, '-')
+          : message.createdTimestamp
+        const messageString = /^> -\d\d\d\d\/\d\d\/\d\d- /.test(message.content)
+          ? message.content.substr(16)
+          : message.content
         return {
           // Use moment to format the date uniformly.
-          date: moment(message.createdTimestamp).format(dateFormat),
+          date: moment(dateString).format(dateFormat),
           // Remove > ", >", >>> ", ", and etc. from the start of lines, and " from the end.
-          content: message.content.replace(/^((>* ?)?"?)|("$)/g, '')
+          content: messageString.replace(/^((>* ?)?"?)|("$)/g, '')
         }
       }
     )
