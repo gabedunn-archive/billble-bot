@@ -46,7 +46,19 @@ export const writePDF = async messages => {
           ],
           margin: [0, 10]
         }
-      })
+      }),
+      [
+        {
+          text: 'Made with open source software, available at',
+          style: 'centered',
+          margin: [0, 50, 0, 0]
+        },
+        {
+          text: 'github.com/redxtech/billble-bot',
+          link: 'https://github.com/redxtech/billble-bot',
+          style: 'centered'
+        }
+      ]
     ],
     defaultStyle: {
       font: 'Fira'
@@ -62,6 +74,9 @@ export const writePDF = async messages => {
         font: 'Roboto',
         fontSize: 12,
         italics: true,
+        alignment: 'center'
+      },
+      centered: {
         alignment: 'center'
       }
     },
