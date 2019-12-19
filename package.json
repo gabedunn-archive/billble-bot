@@ -16,6 +16,7 @@
     "lint:fix": "eslint --ext .js src --fix",
     "prep": "envup",
     "start": "node src/esm.js",
+    "start:other": "node src/other/esm.js",
     "start:dev": "nodemon src/esm.js"
   },
   "dependencies": {

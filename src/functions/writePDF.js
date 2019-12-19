@@ -28,7 +28,7 @@ export const writePDF = async messages => {
         style: 'header'
       },
       {
-        text: 'A compilation of quotes from the legend Bill Bird.',
+        text: 'A compilation of quotes from Bill Bird.',
         margin: [0, 0, 0, 15],
         style: 'subheader'
       },
